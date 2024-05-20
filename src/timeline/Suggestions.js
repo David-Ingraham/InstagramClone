@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Suggestions.css"
 import { Avatar } from '@mui/material'
+import '../css/style.css'
 
 function Suggestions() {
   return (
@@ -63,6 +64,7 @@ function Suggestions() {
           <button className='follow__button'>Follow</button>
         </div>
 
+       
         
       </div>
     </div>

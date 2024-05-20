@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind CSS classes in one file */
+.authentication {
+    @apply flex flex-row items-center mx-12;
+  }
+  
+  .auth__left {
+    @apply flex-[0.5] text-center;
+  }
+  
+  .auth__right {
+    @apply flex-[0.5];
+  }
+  
+  .auth__left > img {
+    @apply w-[400px] mt-10;
+  }
+  
+  .auth__more {
+    @apply border border-gray-400 p-5 mx-7 mt-3 text-center;
+  }
+  
+  .auth__more > span {
+    @apply font-medium text-sm;
+  }
+  
+  .auth__more > span > button {
+    @apply bg-transparent border-0 font-extrabold text-[#0095f6] hover:cursor-pointer;
+  }
+  
+  .login {
+    @apply flex flex-col border border-gray-400 p-12 mx-7;
+  }
+  
+  .login > img {
+    @apply w-[200px] mx-auto mb-10;
+  }
+  
+  .login > input {
+    @apply bg-[#ffffff24] border border-gray-400 rounded-md p-3 mb-2 text-white;
+  }
+  
+  .login > input:focus {
+    @apply outline outline-gray-400;
+  }
+  
+  .login > button {
+    @apply p-3 rounded-lg border-0 font-extrabold text-white bg-[#0095f6];
+  }
+  
+  .login > button:hover {
+    @apply cursor-pointer;
+  }
+
+
+  .signup {
+    @apply flex flex-col border border-gray-400 p-12 mx-7;
+  }
+  
+  .signup > img {
+    @apply w-[200px] mx-auto mb-10;
+  }
+  
+  .signup > input {
+    @apply bg-[#ffffff24] border border-gray-400 rounded-md p-3 mb-2 text-white;
+  }
+  
+  .signup > input:focus {
+    @apply outline outline-gray-400;
+  }
+  
+  .signup > button {
+    @apply p-3 rounded-lg border-0 font-extrabold text-white bg-[#0095f6];
+  }
+  
+  .signup > button:hover {
+    @apply cursor-pointer;
+  }
+  
+  .logout__button {
+    @apply text-[15px] rounded-xl font-bold text-white bg-[rgba(255,255,255,0.211)] border-0 p-2.5;
+  }
+  
+  .logout__button:hover {
+    @apply cursor-pointer bg-[rgba(255,255,255,0.424)];
+  }
+
+  .loader-container {
+    @apply flex justify-center items-center h-screen;
+  }
+  
+  .loader {
+    @apply border-8 border-gray-200 border-t-blue-500 rounded-full w-20 h-20;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
